@@ -1,0 +1,14 @@
+ELEMENTS----------
+un form che contenga
+- cognome
+- nome
+- sesso
+- elenco di materie, (italiano, storia, inglese, informatica, sistemi)
+
+LOGIC----------
+- Salvare su una stringa dentro al SESSION tutti i dati separati da una virgola (compreso M/F sesso e n materie giù)
+- Per ogni persona calcolare una variabile esito:
+
+o   = promosso
+1-3 = sospeso
+4-5 = non promosso
