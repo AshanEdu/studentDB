@@ -1,0 +1,3 @@
+rossi::mario::M::0::promosso
+verdi::luigi::M::2::sospeso
+bianchi::laura::F::2::sospesa
