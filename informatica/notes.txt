@@ -1,0 +1,40 @@
+Gestion File
+---
+fgets(resource $stream, ?int $length = null): string|false
+
+@fopen()                                                                | file_put_contents()
+fwrite(resource $stream, $string $data, ?int $lenght = null): int|false |
+fclose()
+
+@fopen()                                                                | file_get_contents()
+fread(resource $stream, $string $data, ?int $lenght = null): int|false  |
+fclose()                                                                |
+    
+var_dump() | return printable variable of any type
+
+
+File csv
+---
+Acronimo "Comma-Separated Values"
+utilizzo? importare ed esportare tabelle di dati
+contro? No tabelle innestate / Difficilmente leggibile
+
+regole:
+- separare i campi con punto e virgola
+- racchiudere virgole o punto e virgole tra doppo apici
+- separare le righe con un a capo (/n)
+- non lasciare spazi tra 
+
+{cercare differenza apice singolo vs doppio}
+
+[TABLE->]
+Nome     | Cognome  | Città
+______________________________
+Mario    | Rossi    | Roma
+John     | O'Really | New York
+Angelica | Ramos    | London
+
+[-> CSV]
+Mario;Rossi;Roma
+John;O'Really;New York
+Angelica;Ramos;London

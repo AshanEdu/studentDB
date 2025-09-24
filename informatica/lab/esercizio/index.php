@@ -47,6 +47,8 @@ if(isset($_GET["res"])){
 	}
 }
 
+fopen
+
 ?></p>
 </body>
 </html>
