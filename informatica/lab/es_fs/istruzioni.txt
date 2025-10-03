@@ -1,0 +1,11 @@
+index.php che permetta di inserire un file di nome rubrica.txt contenente:
+- num progressivo (invisibile)
+
+- cognome
+- nome
+- indirizzo
+- città
+
+## metodica scrittura
+
+num progress;cognome;nome;indirizzo;città;\r\n

@@ -1,5 +1,48 @@
 Gestion File
----
+Lab---
+
+fopen("nome file", "modalità d'apertura): puntatore a file
+- ### Modalità di apertura:
+	- w -> crea nuovo file troncando precedente, ritorna puntatore ad inizio file
+	- r -> tenta di aprire un file già esistente portando il puntatore ad inizio file
+	- a -> tenta apertura file, se non esiste la crea, ritorna puntatore con cursore dopo l'ultimo carattere scritto
+
+file_exists("puntatore a file"): bool
+
+//not used
+fwrite("puntatore a file", "oggetto da scrivere")
+fread("puntatore a file", "lunghezza bytes-1 da legger") //non usata perché scriveremo in modo dinamico nei file
+
+//substitutes
+fputs("puntatore a file", "oggetto da scrivere"):bool
+fgets("puntatore a file", "lunghezza bytes-1 da leggere (opzionale, non la useremo per file scritti dinamicamente)"):string
+
+feof("puntatore a file"):bool //ha il puntatore raggiunto la fine del file?
+
+fclose("puntatore a file")
+
+CR = carriage return (ritorna all'inizio della riga) "\r" in php
+LF = line feed (\n, vai a capo) "\n" in php
+
+
+ELIMINARE ISTANZA----------
+
+1. $pf=fopen("main.txt", "r")			//aprire file in lettura
+2. $pf-temp=fopen("temp.txt", "w")		//creare file vuoto
+3. while(!feof($pf))  				//scorrere n lettura il file sorgente 
+4. $str=fgets($pf)    				//scrivere in maniera condizionata sul file vuoto
+   $arr=explode(";", $str)
+   if(arr[1]!="Rossi" && array[2]|="Mario"){
+   fputs($pf-temp)
+   }
+5. fclose($pf)					//chiudere il file sorgente
+6. fclose($pf-temp)				//chiudere il file appoggio
+7. unlink("main.txt")				//eliminare il file sorgente
+8. rename("temp.txt", "main.txt")		//rinominare il file appoggio nel file sorgente
+   
+
+
+Checchetti---
 fgets(resource $stream, ?int $length = null): string|false
 
 @fopen()                                                                | file_put_contents()
